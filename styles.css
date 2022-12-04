@@ -1,0 +1,126 @@
+:root {
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-graish-blue: hsl(228, 12%, 48%);    
+    --white: hsl(0, 0%, 100%);
+    --black: #000000;
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --sm: 12px;
+    --md: 14px;
+    --lg: 30px;
+}
+.inactive{
+    display: none;
+}
+
+@media(min-width: 376px){
+    .main-container{    
+        display: none;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        width: 600px;
+        height: 430px;
+        border-radius: 12px ;
+    }
+    .main-img{
+        width: 300px;
+        height: 430px;
+        border-radius: 12px 0 0 12px ;
+    }
+    .in-div{
+        padding: 30px;
+    }
+    .mobile-img{
+        display: none;
+
+    }
+}
+@media(max-width: 375px){
+    .main-container{                   
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 343px;
+        height: 615px;
+        border-radius: 12px ;
+    }
+    .main-img{
+        display: none;
+    }
+    .mobile-img{
+        width: 100%;
+        height: 230px;
+        border-radius: 12px 12px 0 0;
+    }
+    .in-div{
+        padding: 25px;
+    }
+}
+.out-container{
+    
+    display: grid;
+    place-items: center;
+    width:100%;
+           height: 100vh ;
+}
+body{
+    margin: 0;    
+    background-color: var(--cream);
+}
+
+.main-container{
+    background-color: var(--white);
+    
+}
+h3{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin: 0%;
+    font-size: var(--sm);
+    color: var(--dark-graish-blue);
+    
+}
+h1{
+    font-family: 'Fraunces';
+    font-weight: 700;
+    line-height: 32px;
+}
+h2{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin: 0;
+    line-height: 22px;
+    font-size: var(--md); 
+    color: var(--dark-graish-blue);
+}
+
+.my-button{
+    background-color: var(--dark-cyan);
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    height: 42px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: var(--md);
+}
+.price{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.price p:nth-child(1){
+    color: var(--dark-cyan);
+    font-family: 'Fraunces';
+    font-weight: 700;
+    font-size: var(--lg);
+    padding: 24px 18px 20px 0;
+    margin: 0;
+}
+.price p:nth-child(2){
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: var(--dark-graish-blue);
+    font-size: 14px;
+    padding: 34px 0 0 0;
+    margin: 0;
+}
